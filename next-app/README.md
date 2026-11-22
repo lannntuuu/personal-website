@@ -1,21 +1,30 @@
-# Next.js template
+# Tu Lan Photography
 
-This is a Next.js template with shadcn/ui.
+Photographer portfolio built from this shadcn Next.js template with preset `b5rR41Mtnc`.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Checks
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
+
+## Placeholder photos
+
+All images in `public/images/` are placeholders. See the repository README for the replacement list.
 
 ## Adding components
-
-To add components to your app, run the following command:
 
 ```bash
 npx shadcn@latest add button
 ```
 
-This will place the ui components in the `components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
-```
+Components are placed in `components/ui`.
