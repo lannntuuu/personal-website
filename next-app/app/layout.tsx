@@ -3,19 +3,18 @@ import "@fontsource-variable/oxanium"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { SITE } from "@/lib/site"
+import { DESCRIPTION, SITE } from "@/lib/site"
 
 export const metadata = {
   title: {
     default: `${SITE.name} - Photographer`,
     template: `%s | ${SITE.name}`,
   },
-  description:
-    "Portrait, editorial and travel photography by Tu Lan, made for people who want photographs that feel like themselves.",
-  metadataBase: new URL("https://example.com"),
+  description: DESCRIPTION,
+  metadataBase: new URL(SITE.siteUrl),
   openGraph: {
     title: `${SITE.name} - Photographer`,
-    description: "Portrait, editorial and travel photography by Tu Lan.",
+    description: DESCRIPTION,
     images: ["/images/hero-portrait.jpg"],
   },
   icons: { icon: "/favicon.ico" },

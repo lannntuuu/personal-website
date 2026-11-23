@@ -2,7 +2,44 @@ export const SITE = {
   name: "Tu Lan",
   email: "lannntuuu@gmail.com",
   location: "Available worldwide",
+  basedIn: "Ho Chi Minh City",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
 } as const
+
+export const DESCRIPTION =
+  "Portrait, editorial and travel photography by Tu Lan, made for people who want photographs that feel like themselves."
+
+/**
+ * Prices and delivery promises below are placeholders for the photographer
+ * to confirm before launch. Treat every price and number as sample data.
+ */
+export const PRICING = [
+  {
+    name: "Portrait session",
+    price: "$280",
+    detail: "One person, one location, 60 minutes.",
+    includes: ["15 edited images", "Private online gallery", "Print release"],
+    featured: false,
+  },
+  {
+    name: "Editorial day",
+    price: "$950",
+    detail: "A full day on a planned shoot.",
+    includes: [
+      "Up to three locations",
+      "40 edited images",
+      "Direction and shot list",
+    ],
+    featured: true,
+  },
+  {
+    name: "Small event",
+    price: "$700",
+    detail: "Coverage for up to four hours.",
+    includes: ["200 edited images", "Online gallery", "24 hour turnaround"],
+    featured: false,
+  },
+] as const
 
 export const GALLERY = [
   {
@@ -10,8 +47,6 @@ export const GALLERY = [
     alt: "Coastline in soft morning light",
     title: "Northern Coast",
     category: "Travel",
-    width: 1600,
-    height: 2000,
     size: "tall",
   },
   {
@@ -19,8 +54,6 @@ export const GALLERY = [
     alt: "Portrait beside a bright window",
     title: "Window Light",
     category: "Portrait",
-    width: 1600,
-    height: 2000,
     size: "tall",
   },
   {
@@ -28,8 +61,6 @@ export const GALLERY = [
     alt: "City street after dark",
     title: "After Hours",
     category: "Editorial",
-    width: 2000,
-    height: 1400,
     size: "wide",
   },
   {
@@ -37,8 +68,6 @@ export const GALLERY = [
     alt: "Still life with flowers",
     title: "Quiet Objects",
     category: "Still Life",
-    width: 1600,
-    height: 2000,
     size: "tall",
   },
 ] as const

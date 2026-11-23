@@ -7,7 +7,7 @@ import {
 import { HugeiconsIcon } from "@hugeicons/react"
 
 import { Button } from "@/components/ui/button"
-import { GALLERY, REPLACE_IMAGES, SITE } from "@/lib/site"
+import { GALLERY, PRICING, REPLACE_IMAGES, SITE } from "@/lib/site"
 
 function Wordmark() {
   return (
@@ -147,7 +147,7 @@ function About() {
             portrait or a full set of images for print and online use.
           </p>
           <p className="mt-6 text-sm text-muted-foreground">
-            Based in Ho Chi Minh City, available for commissions elsewhere.
+            Based in {SITE.basedIn}, available for commissions elsewhere.
           </p>
         </div>
       </div>
@@ -169,14 +169,10 @@ function Work() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2">
-          {GALLERY.map((photo, index) => (
+          {GALLERY.map((photo) => (
             <figure
               key={photo.src}
-              className={
-                photo.size === "wide" && index === 2
-                  ? "sm:col-span-2"
-                  : undefined
-              }
+              className={photo.size === "wide" ? "sm:col-span-2" : undefined}
             >
               <div
                 className={
@@ -208,34 +204,6 @@ function Work() {
   )
 }
 
-const PRICING = [
-  {
-    name: "Portrait session",
-    price: "$280",
-    detail: "One person, one location, 60 minutes.",
-    includes: ["15 edited images", "Private online gallery", "Print release"],
-    featured: false,
-  },
-  {
-    name: "Editorial day",
-    price: "$950",
-    detail: "A full day on a planned shoot.",
-    includes: [
-      "Up to three locations",
-      "40 edited images",
-      "Direction and shot list",
-    ],
-    featured: true,
-  },
-  {
-    name: "Small event",
-    price: "$700",
-    detail: "Coverage for up to four hours.",
-    includes: ["200 edited images", "Online gallery", "24 hour turnaround"],
-    featured: false,
-  },
-] as const
-
 function Pricing() {
   return (
     <section
@@ -248,8 +216,9 @@ function Pricing() {
             Pricing
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Starting rates for common commissions. Every quote is confirmed in
-            writing before the shoot date.
+            Sample rates for common commissions, shown for illustration until
+            confirmed by the photographer. Every quote is confirmed in writing
+            before the shoot date.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">

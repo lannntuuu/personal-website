@@ -34,6 +34,18 @@ All photographs in `next-app/public/images/` are placeholder images. Replace the
 
 The same list is available on the site in the footer under "Placeholder image replacements".
 
+## Values to confirm before launch
+
+These are sample values hardcoded in `next-app/lib/site.ts`, not real business facts. Confirm and update them before going live:
+
+- `PRICING`: package names, prices ($280 / $950 / $700) and delivery promises (image counts, turnaround times).
+- `SITE.basedIn`: the photographer's base city, shown in the introduction.
+- `SITE.name` and `SITE.email`: identity and contact details.
+
+## Deploy
+
+Set `NEXT_PUBLIC_SITE_URL` to the real deployed domain so social share previews point at the correct OpenGraph image (see `next-app/.env.example`). OpenGraph falls back to `https://example.com` until this is set.
+
 ## Adding UI components
 
 ```bash
