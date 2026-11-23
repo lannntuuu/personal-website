@@ -19,6 +19,7 @@ walk(repoRoot)
 
 const forbidden = [
   { label: "real name", pattern: /Tu Lan/gi },
+  { label: "real name (joined variant)", pattern: /tulan/gi },
   { label: "real email", pattern: /lannntuuu(?:@gmail\.com)?/gi },
 ]
 
