@@ -83,7 +83,7 @@ function Hero() {
           Photographs that keep the feeling of the moment.
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-          I am Tu Lan, a photographer working across portraits, editorial
+          I am Alex Morgan, a photographer working across portraits, editorial
           stories and places worth remembering.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -102,7 +102,7 @@ function Hero() {
         <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden bg-muted md:ml-auto">
           <Image
             src="/images/hero-portrait.jpg"
-            alt="Portrait placeholder for Tu Lan"
+            alt="Portrait placeholder for Alex Morgan"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 45vw"

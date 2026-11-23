@@ -1,4 +1,4 @@
-# Tu Lan Photography
+# Alex Morgan Photography
 
 Photographer portfolio built from this shadcn Next.js template with preset `b5rR41Mtnc`.
 

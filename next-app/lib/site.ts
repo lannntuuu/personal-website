@@ -1,13 +1,13 @@
 export const SITE = {
-  name: "Tu Lan",
-  email: "lannntuuu@gmail.com",
+  name: "Alex Morgan",
+  email: "hello@example.com",
   location: "Available worldwide",
   basedIn: "Ho Chi Minh City",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
 } as const
 
 export const DESCRIPTION =
-  "Portrait, editorial and travel photography by Tu Lan, made for people who want photographs that feel like themselves."
+  "Portrait, editorial and travel photography by Alex Morgan, made for people who want photographs that feel like themselves."
 
 /**
  * Prices and delivery promises below are placeholders for the photographer

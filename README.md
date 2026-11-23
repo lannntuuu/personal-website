@@ -1,6 +1,6 @@
-# Tu Lan Photography
+# Alex Morgan Photography
 
-Personal website for photographer Tu Lan. Built from the shadcn Next.js template using preset `b5rR41Mtnc`.
+Personal website for photographer Alex Morgan. Built from the shadcn Next.js template using preset `b5rR41Mtnc`.
 
 ## Run locally
 
